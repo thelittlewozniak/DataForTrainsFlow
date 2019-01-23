@@ -11,5 +11,7 @@ namespace CommonClasses.Poco
         public bool HasPrecipitation { get; set; }
         public string PrecipitationType { get; set; }
         public int RelativeHumidity { get; set; }
+        public double Temperature { get; set; }
+        public DateTime DateTime { get; set; }
     }
 }
