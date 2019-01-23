@@ -63,6 +63,9 @@ namespace DataForTrainsFlow
                         var json = webClient.DownloadString(url);
                         var dataAPI = JsonConvert.DeserializeObject<List<Weather>>(json);
                         Console.WriteLine("Adding into the database");
+                        Console.WriteLine("Weather:" + dataAPI[0].WeatherText);
+                        Console.WriteLine("Precipitaion:" + dataAPI[0].HasPrecipitation);
+                        Console.WriteLine("Temperature:" + dataAPI[0].Temperature.metric.Value);
                         string addingData = "http://weathertrainsflow.azurewebsites.net/api/Weather/Add?weatherText=" + dataAPI[0].WeatherText + "&hasPrecipitation=" + dataAPI[0].HasPrecipitation + "&precipitationType=" + dataAPI[0].PrecipitationType + "&relativeHumidity=" + dataAPI[0].RelativeHumidity + "&temperature=" + dataAPI[0].Temperature.metric.Value + "&dateTime=" + now.ToString("MM/dd/yyyy HH:mm");
                         json =new WebClient().DownloadString(addingData);
                         System.Threading.Thread.Sleep(60000);
