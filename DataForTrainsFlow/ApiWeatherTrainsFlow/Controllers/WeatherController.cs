@@ -25,7 +25,7 @@ namespace ApiWeatherTrainsFlow.Controllers
         }
         [Route("Add")]
         [HttpGet]
-        public ActionResult<Weather> Add(string weatherText,string hasPrecipitation,string precipitationType, string relativeHumidity,string temperature,string dateTime)
+        public ActionResult<Weather> Add(string weatherText,string hasPrecipitation,string precipitationType, int relativeHumidity,double temperature,string dateTime)
         {
             Weather newWeather = new Weather
             {
@@ -33,8 +33,8 @@ namespace ApiWeatherTrainsFlow.Controllers
                 WeatherText=weatherText,
                 HasPrecipitation=bool.Parse(hasPrecipitation),
                 PrecipitationType=precipitationType,
-                RelativeHumidity=int.Parse(relativeHumidity),
-                Temperature=double.Parse(temperature)
+                RelativeHumidity=relativeHumidity,
+                Temperature=temperature
             };
             _context.Weathers.Add(newWeather);
             _context.SaveChanges();
