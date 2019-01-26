@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using ApiWeatherTrainsFlow.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using LibraryClass.Poco;
+
 
 namespace ApiWeatherTrainsFlow.Controllers
 {

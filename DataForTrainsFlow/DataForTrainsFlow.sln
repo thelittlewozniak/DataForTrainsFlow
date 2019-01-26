@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataWeatherForTrainsFlow", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWeatherTrainsFlow", "ApiWeatherTrainsFlow\ApiWeatherTrainsFlow.csproj", "{5E7FD55F-2428-4A4C-8731-D700DE637C34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryClass", "ClassLibrary1\LibraryClass.csproj", "{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataWeatherForTrainsFlow.APIWeather
 {
-    class Weather
+    class WeatherAPI
     {
         public string WeatherText { get; set; }
         public bool HasPrecipitation { get; set; }

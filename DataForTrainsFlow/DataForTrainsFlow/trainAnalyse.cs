@@ -1,4 +1,5 @@
 ﻿using DataWeatherForTrainsFlow.APITrain;
+using LibraryClass.Poco;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,10 +14,10 @@ namespace DataWeatherForTrainsFlow
         private readonly WebClient webClient;
         private readonly string url;
         private readonly DateTime now;
-        public TrainAnalyse(DateTime now)
+        public TrainAnalyse()
         {
             webClient = new WebClient();
-            url = "https://api.irail.be/connections/?from=Charleroi&to=Mons&date="+now.ToString("ddMMy")+"&format=json&time="+now.ToString("HHmm");
+            url = "http://weathertrainsflow.azurewebsites.net/api/Weather/getAll";
             this.now = now;
         }
         public void Analyse()
@@ -27,15 +28,19 @@ namespace DataWeatherForTrainsFlow
                 w.WriteLine("Begin the analyze time:" + now.ToString());
                 try
                 {
-                    var json = webClient.DownloadString(url);
-                    var dataAPI = JsonConvert.DeserializeObject<Result>(json);
-                    var weatherData = webClient.DownloadString("http://weathertrainsflow.azurewebsites.net/api/Weather/getAll");
-                    w.WriteLine("Adding into the database");
-                    w.WriteLine("Train:" + dataAPI[0].WeatherText);
-                    w.WriteLine("Precipitaion:" + dataAPI[0].HasPrecipitation);
-                    w.WriteLine("Temperature:" + dataAPI[0].Temperature.metric.Value);
-                    string addingData = "http://weathertrainsflow.azurewebsites.net/api/Weather/Add?weatherText=" + dataAPI[0].WeatherText + "&hasPrecipitation=" + dataAPI[0].HasPrecipitation + "&precipitationType=" + dataAPI[0].PrecipitationType + "&relativeHumidity=" + dataAPI[0].RelativeHumidity + "&temperature=" + (int)dataAPI[0].Temperature.metric.Value + "&dateTime=" + now.ToString("MM/dd/yyyy HH:mm");
-                    json = webClient.DownloadString(addingData);
+                    var weatherData = webClient.DownloadString(url);
+                    List<Weather> weatherAPI = JsonConvert.DeserializeObject<List<Weather>>(weatherData);
+                    for(int i = 0; i < weatherAPI.Count; i++)
+                    {
+                        var json = webClient.DownloadString("https://api.irail.be/connections/?from=Charleroi&to=Mons&date=" + weatherAPI[i].DateTime.ToString("ddMMy") + "&format=json&time=" + weatherAPI[i].DateTime.ToString("HHmm"));
+                        var dataAPI = JsonConvert.DeserializeObject<Result>(json);
+                        if (UnixTimeStampToDateTime(dataAPI.connection[0].departure.time) == weatherAPI[i].DateTime)
+                        {
+                            string addingData = "http://weathertrainsflow.azurewebsites.net/api/Weather/Add?weatherText=";
+                            json = webClient.DownloadString(addingData);
+
+                        }
+                    }
                 }
                 catch (Exception e)
                 {
@@ -46,7 +51,13 @@ namespace DataWeatherForTrainsFlow
                 w.WriteLine("*********************************************************************");
             }
         }
+        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
+        {
+            // Unix timestamp is seconds past epoch
+            System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+            return dtDateTime;
+        }
     }
 
-}
 }

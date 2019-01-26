@@ -28,7 +28,7 @@ namespace DataWeatherForTrainsFlow
                 try
                 {
                     var json = webClient.DownloadString(url);
-                    var dataAPI = JsonConvert.DeserializeObject<List<Weather>>(json);
+                    var dataAPI = JsonConvert.DeserializeObject<List<WeatherAPI>>(json);
                     w.WriteLine("Adding into the database");
                     w.WriteLine("Weather:" + dataAPI[0].WeatherText);
                     w.WriteLine("Precipitaion:" + dataAPI[0].HasPrecipitation);
