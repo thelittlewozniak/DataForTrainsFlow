@@ -39,11 +39,11 @@ namespace DataWeatherForTrainsFlow
                 catch (Exception e)
                 {
                     w.WriteLine("Error(s):" + e.Message);
-                }
-                System.Threading.Thread.Sleep(60000);
+                }               
                 w.WriteLine("End the analyze time:" + now.ToString());
                 w.WriteLine("*********************************************************************");
             }
+            System.Threading.Thread.Sleep(60000);
         }
     }
 }
