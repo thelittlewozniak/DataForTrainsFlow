@@ -31,7 +31,7 @@ namespace DataWeatherForTrainsFlow
                 {
                     var weatherData = webClient.DownloadString(url);
                     List<Weather> weatherAPI = JsonConvert.DeserializeObject<List<Weather>>(weatherData);
-                    weatherAPI = (from e in weatherAPI where e.DateTime.Day == now.Day select e).ToList();
+                    weatherAPI = (from e in weatherAPI where e.DateTime.Day == now.Day && e.DateTime.Month==now.Month && e.DateTime.Year==now.Year select e).ToList();
                     for(int i = 0; i < weatherAPI.Count; i++)
                     {
                         var json = webClient.DownloadString("https://api.irail.be/connections/?from=Charleroi&to=Mons&date=" + weatherAPI[i].DateTime.ToString("ddMMy") + "&format=json&time=" + weatherAPI[i].DateTime.ToString("HHmm"));
