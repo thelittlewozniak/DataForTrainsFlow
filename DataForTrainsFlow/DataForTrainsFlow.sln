@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataWeatherForTrainsFlow", "DataForTrainsFlow\DataWeatherForTrainsFlow.csproj", "{387DE4AE-6203-4F39-AF0C-9C44AAB50639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataWeatherForTrainsFlow", "DataForTrainsFlow\DataWeatherForTrainsFlow.csproj", "{387DE4AE-6203-4F39-AF0C-9C44AAB50639}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWeatherTrainsFlow", "ApiWeatherTrainsFlow\ApiWeatherTrainsFlow.csproj", "{5E7FD55F-2428-4A4C-8731-D700DE637C34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWeatherTrainsFlow", "ApiWeatherTrainsFlow\ApiWeatherTrainsFlow.csproj", "{5E7FD55F-2428-4A4C-8731-D700DE637C34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5E7FD55F-2428-4A4C-8731-D700DE637C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E7FD55F-2428-4A4C-8731-D700DE637C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E7FD55F-2428-4A4C-8731-D700DE637C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32F3E7E-27CE-48AF-AE72-39D9B022FFD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

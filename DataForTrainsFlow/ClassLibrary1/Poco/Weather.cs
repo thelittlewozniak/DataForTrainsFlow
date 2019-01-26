@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApiWeatherTrainsFlow.Model
+namespace LibraryClass.Poco
 {
     public class Weather
     {
