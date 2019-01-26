@@ -7,10 +7,11 @@ namespace LibraryClass.Poco
     public class Analyze
     {
         public int Id { get; set; }
-        public int delay { get; set; }
-        public string station { get; set; }
-        public int time { get; set; }
-        public string vehicle { get; set; }
-        public Weather weather { get; set; }
+        public int Delay { get; set; }
+        public string StationDepart { get; set; }
+        public string StationArrival { get; set; }
+        public int Time { get; set; }
+        public string Vehicle { get; set; }
+        public Weather Weather { get; set; }
     }
 }

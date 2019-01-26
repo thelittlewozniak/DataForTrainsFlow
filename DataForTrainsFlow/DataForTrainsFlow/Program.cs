@@ -63,6 +63,10 @@ namespace DataForTrainsFlow
                         new WeatherAnalyse(now).Analyse();
                     }
                 }
+                if(now.Hour==23 && now.Minute == 59 && now.Second==01)
+                {
+                    new TrainAnalyse(now).Analyse();
+                }
             }
         }
     }
