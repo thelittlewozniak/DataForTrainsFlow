@@ -51,9 +51,8 @@ namespace DataForTrainsFlow
                 new DateTime(2019,1,1,22,47,0),
 
                 //debug
-                //new DateTime(2019,1,1,13,53,0),
+                new DateTime(2019,1,1,16,02,0),
             };
-            WebClient webClient = new WebClient();
             while (true)
             {
                 DateTime now = DateTime.Now;
