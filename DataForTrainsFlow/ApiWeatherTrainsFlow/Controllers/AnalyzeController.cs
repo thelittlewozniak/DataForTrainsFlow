@@ -34,7 +34,7 @@ namespace ApiDataTrainsFlow.Controllers
                 Weather = (from e in _context.Weathers where e.Id == idWeather select e).FirstOrDefault(),
                 StationDepart = stationDepart,
                 StationArrival = stationArrival,
-                Day = UnixTimeStampToDateTime(time).Day,
+                Day = UnixTimeStampToDateTime(time).DayOfWeek,
                 Month = UnixTimeStampToDateTime(time).Month,
                 Delay =delay,
                 Vehicle=vehicle
