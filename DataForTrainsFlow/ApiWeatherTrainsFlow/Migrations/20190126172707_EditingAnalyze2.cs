@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ApiWeatherTrainsFlow.Migrations
+namespace ApiDataTrainsFlow.Migrations
 {
     public partial class EditingAnalyze2 : Migration
     {

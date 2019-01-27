@@ -12,18 +12,20 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/Weather/GetAll",
       "environmentVariables": {
         "defaultConnection": "Server=tcp:weathertrainsflow.database.windows.net,1433;Initial Catalog=WeatherTrainsFlow;Persist Security Info=False;User ID=thelittlewozniak;Password=Ruedesdames14;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ApiWeatherTrainsFlow": {
+    "ApiDataTrainsFlow": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/Weather/GetAll",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "defaultConnection": "Server=tcp:weathertrainsflow.database.windows.net,1433;Initial Catalog=WeatherTrainsFlow;Persist Security Info=False;User ID=thelittlewozniak;Password=Ruedesdames14;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }

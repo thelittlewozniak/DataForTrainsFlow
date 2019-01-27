@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ApiWeatherTrainsFlow.Migrations
+namespace ApiDataTrainsFlow.Migrations
 {
     public partial class firstMigration : Migration
     {

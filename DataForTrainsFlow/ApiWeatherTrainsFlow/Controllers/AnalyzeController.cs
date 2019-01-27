@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ApiWeatherTrainsFlow.Model;
+using ApiDataTrainsFlow.Model;
 using LibraryClass.Poco;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiWeatherTrainsFlow.Controllers
+namespace ApiDataTrainsFlow.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
