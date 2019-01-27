@@ -10,7 +10,8 @@ namespace LibraryClass.Poco
         public int Delay { get; set; }
         public string StationDepart { get; set; }
         public string StationArrival { get; set; }
-        public int Time { get; set; }
+        public int Day { get; set; }
+        public int Month { get; set; }
         public string Vehicle { get; set; }
         public Weather Weather { get; set; }
     }

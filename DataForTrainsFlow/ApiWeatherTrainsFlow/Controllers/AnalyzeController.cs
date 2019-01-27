@@ -6,6 +6,7 @@ using ApiDataTrainsFlow.Model;
 using LibraryClass.Poco;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiDataTrainsFlow.Controllers
 {
@@ -22,7 +23,7 @@ namespace ApiDataTrainsFlow.Controllers
         [HttpGet]
         public ActionResult<List<Analyze>> GetAll(string id)
         {
-            return _context.Analyzes.ToList();
+            return _context.Analyzes.Include(e => e.Weather).ToList();
         }
         [Route("Add")]
         [HttpGet]
@@ -32,14 +33,23 @@ namespace ApiDataTrainsFlow.Controllers
             {
                 Weather = (from e in _context.Weathers where e.Id == idWeather select e).FirstOrDefault(),
                 StationDepart = stationDepart,
-                StationArrival=stationArrival,
-                Time=time,
-                Delay=delay,
+                StationArrival = stationArrival,
+                Day = UnixTimeStampToDateTime(time).Day,
+                Month = UnixTimeStampToDateTime(time).Month,
+                Delay =delay,
                 Vehicle=vehicle
             };
             _context.Analyzes.Add(newAnalyze);
             _context.SaveChanges();
             return newAnalyze;
         }
+        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
+        {
+            // Unix timestamp is seconds past epoch
+            System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+            return dtDateTime;
+        }
+
     }
 }
