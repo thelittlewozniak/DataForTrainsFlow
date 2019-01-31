@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using TrainsFlow.Models;
 
 namespace TrainsFlow.Controllers
 {
@@ -20,9 +21,11 @@ namespace TrainsFlow.Controllers
     public class ModelController : ControllerBase
     {
         private readonly IHostingEnvironment hostingEnvironment;
-        public ModelController(IHostingEnvironment environment)
+        private Context _context;
+        public ModelController(IHostingEnvironment environment,Context context)
         {
             hostingEnvironment = environment;
+            _context = context;
         }
         [Route("CreateData")]
         [HttpGet]
@@ -30,7 +33,9 @@ namespace TrainsFlow.Controllers
         {
             try
             {
-                using (FileStream s = System.IO.File.Create(Path.Combine(hostingEnvironment.WebRootPath, "data/data" + DateTime.Now.ToString("ddMMyyyHHmm")+".txt")))
+                DateTime now = DateTime.Now;
+                string path = "data/data" + now.ToString("ddMMyyyHHmm");
+                using (FileStream s = System.IO.File.Create(Path.Combine(hostingEnvironment.WebRootPath, path+".txt")))
                 {
                     var data = new WebClient().DownloadString("http://weathertrainsflow.azurewebsites.net/api/Analyze/GetAll");
                     List<Analyze> analyzes = JsonConvert.DeserializeObject<List<Analyze>>(data);
@@ -41,6 +46,9 @@ namespace TrainsFlow.Controllers
                         byte[] newline = Encoding.ASCII.GetBytes(Environment.NewLine);
                         s.Write(newline, 0, newline.Length);
                     }
+                    _context.Datas.Add(new Data { DateTime = now, Path = path });
+                    _context.SaveChanges();
+
                     return "ok";
                 }
             }
