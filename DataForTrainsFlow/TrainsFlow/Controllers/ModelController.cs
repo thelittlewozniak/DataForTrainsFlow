@@ -24,9 +24,9 @@ namespace TrainsFlow.Controllers
         {
             hostingEnvironment = environment;
         }
-        [Route("Get")]
+        [Route("CreateData")]
         [HttpGet]
-        public ActionResult<string> Createdata()
+        public ActionResult<string> CreateData()
         {
             try
             {
