@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ML;
+using Microsoft.ML.Data;
 using Newtonsoft.Json;
 using TrainsFlow.Models;
 
@@ -41,7 +43,7 @@ namespace TrainsFlow.Controllers
                     List<Analyze> analyzes = JsonConvert.DeserializeObject<List<Analyze>>(data);
                     foreach (Analyze item in analyzes)
                     {
-                        Byte[] info = new UTF8Encoding(true).GetBytes(item.StationDepart + "," + item.StationArrival + "," + item.Day + "," + item.Vehicle + "," + item.Weather.WeatherText + "," + item.Weather.Temperature + "," + item.Weather.RelativeHumidity + "," + item.Weather.HasPrecipitation + "," + item.Weather.PrecipitationType+","+item.Delay);
+                        Byte[] info = new UTF8Encoding(true).GetBytes(item.StationDepart + "," + item.StationArrival + "," + item.Day + "," + item.Vehicle + "," + item.Weather.WeatherText + "," + item.Weather.Temperature + "," + item.Weather.RelativeHumidity + "," + item.Weather.HasPrecipitation + "," + item.Weather.PrecipitationType+","+item.Weather.DateTime.ToString("HHmm")+","+item.Delay);
                         s.Write(info, 0, info.Length);
                         byte[] newline = Encoding.ASCII.GetBytes(Environment.NewLine);
                         s.Write(newline, 0, newline.Length);
@@ -55,6 +57,22 @@ namespace TrainsFlow.Controllers
             catch (IOException e)
             {
 
+                return e.Message;
+            }
+        }
+        [Route("Train")]
+        [HttpGet]
+        public ActionResult<string> train()
+        {
+            try
+            {
+                var mlContext = new MLContext();
+                var reader = mlContext.Data.CreateTextReader<TrainData>(separatorChar: ',', hasHeader: false);
+                var trainData = _context.Datas.Last();
+                IDataView trainingdataView = reader.Read(trainData.Path + ".txt");
+            }
+            catch (Exception e)
+            {
                 return e.Message;
             }
         }
