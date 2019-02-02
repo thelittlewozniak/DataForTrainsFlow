@@ -8,7 +8,7 @@ namespace TrainsFlow.Models
 {
     public class TrainPrediction
     {
-        [ColumnName("PredictedTime")]
+        [ColumnName("PredictedDelay")]
         public float PredictedTimes { get; set; }
     }
 }

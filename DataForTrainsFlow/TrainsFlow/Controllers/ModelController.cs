@@ -69,8 +69,8 @@ namespace TrainsFlow.Controllers
                 var mlContext = new MLContext();
                 var reader = mlContext.Data.CreateTextReader<TrainData>(separatorChar: ',', hasHeader: false);
                 var trainData = _context.Datas.Last();
-                IDataView trainingdataView = reader.Read(Path.Combine(hostingEnvironment.WebRootPath, trainData.Path+".txt"));
-                var pipeline = mlContext.Transforms.Conversion.MapValueToKey("Delay")
+                IDataView trainingdataView = reader.Read(Path.Combine(hostingEnvironment.WebRootPath, trainData.Path + ".txt"));
+                var pipeline = mlContext.Transforms.CopyColumns("Delay", "Label")
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding("StationDepart"))
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding("StationArrival"))
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding("Day"))
@@ -80,12 +80,11 @@ namespace TrainsFlow.Controllers
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding("PrecipitationType"))
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding("Time"))
                     .Append(mlContext.Transforms.Concatenate("Features", "StationDepart", "StationArrival", "Day", "Train", "WeatherText", "Temperature", "Humidity", "HasPrecipitation", "PrecipitationType", "Time"))
-                    .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent(labelColumn: "Delay", featureColumn: "Features"))
-                    .Append(mlContext.Transforms.Conversion.MapKeyToValue("Delay"));
+                    .Append(mlContext.Regression.Trainers.FastTree());
                 var model = pipeline.Fit(trainingdataView);
                 DateTime now = DateTime.Now;
-                var path = "model/model" +now.ToString("ddMMyyyHHmm");
-                using (var stream=System.IO.File.Create(Path.Combine(hostingEnvironment.WebRootPath, path)))
+                var path = "model/model" + now.ToString("ddMMyyyHHmm");
+                using (var stream = System.IO.File.Create(Path.Combine(hostingEnvironment.WebRootPath, path)))
                 {
                     mlContext.Model.Save(model, stream);
                 }
@@ -96,7 +95,9 @@ namespace TrainsFlow.Controllers
                         Path = path
                     });
                 _context.SaveChanges();
-                return "ok";
+                var predictions = model.Transform(trainingdataView);
+                var metrics = mlContext.Regression.Evaluate(predictions, "Label", "Score");
+                return metrics.RSquared.ToString();
             }
             catch (Exception e)
             {
@@ -116,14 +117,15 @@ namespace TrainsFlow.Controllers
                     {
                         StationDepart = "Charleroi-Sud",
                         StationArrival = "Mons",
-                        Day = "Friday",
-                        Train = "BE.NMBS.IC3841",
-                        WeatherText = "Mostly cloudy",
-                        Temperature = 3,
+                        Day = "Wednesday",
+                        Train = "BE.NMBS.IC3839",
+                        WeatherText = "Mostly clear",
+                        Temperature = 0,
                         Humidity = 0,
                         HasPrecipitation = false,
                         PrecipitationType = null,
-                        Time = "2044"
+                        Time = "1844",
+                        Delay=0
                     });
                 return prediction.PredictedTimes;
             }
