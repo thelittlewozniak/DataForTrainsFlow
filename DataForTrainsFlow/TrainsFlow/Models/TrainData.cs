@@ -13,7 +13,7 @@ namespace TrainsFlow.Models
         [LoadColumn(1)]
         public string StationArrival { get; set; }
         [LoadColumn(2)]
-        public int Day { get; set; }
+        public string Day { get; set; }
         [LoadColumn(3)]
         public string Train { get; set; }
         [LoadColumn(4)]
@@ -21,14 +21,14 @@ namespace TrainsFlow.Models
         [LoadColumn(5)]
         public float Temperature { get; set; }
         [LoadColumn(6)]
-        public int Humidity { get; set; }
+        public float Humidity { get; set; }
         [LoadColumn(7)]
         public bool HasPrecipitation { get; set; }
         [LoadColumn(8)]
         public string PrecipitationType { get; set; }
         [LoadColumn(9)]
-        public int Time { get; set; }
+        public string Time { get; set; }
         [LoadColumn(10)]
-        public int Delay { get; set; }
+        public float Delay { get; set; }
     }
 }

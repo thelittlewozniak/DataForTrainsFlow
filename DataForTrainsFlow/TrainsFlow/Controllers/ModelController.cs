@@ -43,7 +43,7 @@ namespace TrainsFlow.Controllers
                     List<Analyze> analyzes = JsonConvert.DeserializeObject<List<Analyze>>(data);
                     foreach (Analyze item in analyzes)
                     {
-                        Byte[] info = new UTF8Encoding(true).GetBytes(item.StationDepart + "," + item.StationArrival + "," + item.Day + "," + item.Vehicle + "," + item.Weather.WeatherText + "," + item.Weather.Temperature + "," + item.Weather.RelativeHumidity + "," + item.Weather.HasPrecipitation + "," + item.Weather.PrecipitationType+","+item.Weather.DateTime.ToString("HHmm")+","+item.Delay);
+                        Byte[] info = new UTF8Encoding(true).GetBytes(item.StationDepart + "," + item.StationArrival + "," + item.Day + "," + item.Vehicle + "," + item.Weather.WeatherText + "," + (float)item.Weather.Temperature + "," + (float)item.Weather.RelativeHumidity + "," + item.Weather.HasPrecipitation + "," + item.Weather.PrecipitationType+","+item.Weather.DateTime.ToString("HHmm")+","+(float)item.Delay);
                         s.Write(info, 0, info.Length);
                         byte[] newline = Encoding.ASCII.GetBytes(Environment.NewLine);
                         s.Write(newline, 0, newline.Length);
@@ -62,18 +62,70 @@ namespace TrainsFlow.Controllers
         }
         [Route("Train")]
         [HttpGet]
-        public ActionResult<string> train()
+        public ActionResult<string> Train()
         {
             try
             {
                 var mlContext = new MLContext();
                 var reader = mlContext.Data.CreateTextReader<TrainData>(separatorChar: ',', hasHeader: false);
                 var trainData = _context.Datas.Last();
-                IDataView trainingdataView = reader.Read(trainData.Path + ".txt");
+                IDataView trainingdataView = reader.Read(Path.Combine(hostingEnvironment.WebRootPath, trainData.Path+".txt"));
+                var pipeline = mlContext.Transforms.Conversion.MapValueToKey("Delay")
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("StationDepart"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("StationArrival"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("Day"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("Train"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("WeatherText"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("HasPrecipitation"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("PrecipitationType"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding("Time"))
+                    .Append(mlContext.Transforms.Concatenate("Features", "StationDepart", "StationArrival", "Day", "Train", "WeatherText", "Temperature", "Humidity", "HasPrecipitation", "PrecipitationType", "Time"))
+                    .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent(labelColumn: "Delay", featureColumn: "Features"))
+                    .Append(mlContext.Transforms.Conversion.MapKeyToValue("Delay"));
+                var model = pipeline.Fit(trainingdataView);
+                DateTime now = DateTime.Now;
+                var path = "model/model" +now.ToString("ddMMyyyHHmm");
+                using (var stream=System.IO.File.Create(Path.Combine(hostingEnvironment.WebRootPath, path)))
+                {
+                    mlContext.Model.Save(model, stream);
+                }
+                _context.Models.Add(
+                    new Model()
+                    {
+                        DateTime = now,
+                        Path = path
+                    });
+                _context.SaveChanges();
+                return "ok";
             }
             catch (Exception e)
             {
                 return e.Message;
+            }
+        }
+        [Route("Predict")]
+        [HttpGet]
+        public ActionResult<float> Predict()
+        {
+            using (var stream=System.IO.File.OpenRead(Path.Combine(hostingEnvironment.WebRootPath, _context.Models.Last().Path)))
+            {
+                MLContext mlContext = new MLContext();
+                var model = mlContext.Model.Load(stream);
+                var prediction = model.CreatePredictionEngine<TrainData, TrainPrediction>(mlContext).Predict(
+                    new TrainData()
+                    {
+                        StationDepart = "Charleroi-Sud",
+                        StationArrival = "Mons",
+                        Day = "Friday",
+                        Train = "BE.NMBS.IC3841",
+                        WeatherText = "Mostly cloudy",
+                        Temperature = 3,
+                        Humidity = 0,
+                        HasPrecipitation = false,
+                        PrecipitationType = null,
+                        Time = "2044"
+                    });
+                return prediction.PredictedTimes;
             }
         }
     }
