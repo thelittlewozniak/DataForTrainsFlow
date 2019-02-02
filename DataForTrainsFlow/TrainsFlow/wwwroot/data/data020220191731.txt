@@ -1,0 +1,214 @@
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3831,Partly sunny,-2,0,False,,1044,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC932,Mostly cloudy,-2,0,False,,1112,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3832,Mostly cloudy,-1,0,False,,1144,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC933,Cloudy,-1,0,False,,1212,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3842,Mostly cloudy,-1,0,False,,2144,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC943,Mostly cloudy,-1,0,False,,2212,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3843,Mostly cloudy,-1,0,False,,2247,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3825,Partly cloudy,-1,0,False,,0444,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3826,Mostly cloudy,-1,0,False,,0544,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC927,Mostly cloudy,-1,0,False,,0612,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3827,Mostly cloudy,0,0,False,,0644,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC928,Mostly cloudy,0,0,False,,0712,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3828,Mostly cloudy,0,0,False,,0744,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC929,Mostly cloudy,-1,0,False,,0812,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3829,Fog,0,0,False,,0844,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC930,Fog,0,0,False,,0912,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3830,Fog,0,0,False,,0944,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC931,Fog,0,0,False,,1012,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3831,Mostly cloudy,0,0,False,,1044,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC932,Cloudy,0,0,False,,1112,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3832,Cloudy,0,0,False,,1144,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC933,Mostly cloudy,0,0,False,,1212,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3833,Cloudy,0,0,False,,1244,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC934,Cloudy,0,0,False,,1312,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3834,Cloudy,0,0,False,,1344,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC935,Cloudy,0,0,False,,1412,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3835,Cloudy,1,0,False,,1444,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC936,Cloudy,1,0,False,,1512,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3836,Cloudy,1,0,False,,1544,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC937,Cloudy,1,0,False,,1612,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3837,Cloudy,1,0,False,,1644,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC938,Cloudy,1,0,False,,1712,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3838,Cloudy,1,0,False,,1744,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC939,Cloudy,1,0,False,,1812,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3839,Cloudy,1,0,False,,1844,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC940,Cloudy,1,0,False,,1912,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3840,Cloudy,1,0,False,,1944,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC941,Cloudy,1,0,False,,2012,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3841,Cloudy,2,0,False,,2044,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC942,Cloudy,2,0,False,,2112,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3842,Cloudy,2,0,False,,2144,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC943,Cloudy,2,0,False,,2212,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3843,Cloudy,2,0,False,,2247,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3825,Light snow,1,0,True,Snow,0444,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3826,Cloudy,2,0,False,,0544,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC927,Cloudy,2,0,False,,0612,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3827,Cloudy,2,0,False,,0644,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC928,Cloudy,2,0,False,,0712,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3828,Cloudy,2,0,False,,0744,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC929,Cloudy,2,0,False,,0812,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3829,Light snow,1,0,True,Snow,0844,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC930,Cloudy,1,0,False,,0912,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3830,Light snow,2,0,True,Snow,0944,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC931,Light rain,2,0,True,Rain,1012,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3831,Cloudy,2,0,False,,1044,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC932,Cloudy,2,0,False,,1112,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3832,Mostly cloudy,2,0,False,,1144,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC933,Light rain,2,0,True,Rain,1212,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3833,Snow,2,0,True,Snow,1244,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC934,Light rain,2,0,True,Rain,1312,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3834,Cloudy,1,0,False,,1344,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC935,Light rain,3,0,True,Rain,1412,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3835,Light rain,3,0,True,Rain,1444,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC936,Cloudy,2,0,False,,1512,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3836,Cloudy,2,0,False,,1544,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC937,Cloudy,2,0,False,,1612,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3837,Cloudy,2,0,False,,1644,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3838,Mostly cloudy,2,0,False,,1744,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC939,Cloudy,2,0,False,,1812,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3839,Mostly cloudy,2,0,False,,1844,60
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC940,Mostly cloudy,2,0,False,,1912,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3840,Mostly cloudy,2,0,False,,1944,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3841,Mostly cloudy,1,0,False,,2044,60
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC942,Mostly cloudy,1,0,False,,2112,120
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3842,Mostly cloudy,1,0,False,,2144,0
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC943,Mostly cloudy,2,0,False,,2212,60
+Charleroi-Sud,Mons,Monday,BE.NMBS.IC3843,Mostly cloudy,2,0,False,,2247,600
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3825,Mostly cloudy,0,0,False,,0444,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3826,Mostly cloudy,-1,0,False,,0544,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC927,Mostly cloudy,-1,0,False,,0612,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3827,Mostly cloudy,-1,0,False,,0644,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC928,Mostly cloudy,-1,0,False,,0712,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3828,Mostly cloudy,-1,0,False,,0744,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC929,Mostly cloudy,-1,0,False,,0812,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3829,Mostly cloudy,-1,0,False,,0844,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC930,Mostly cloudy,-1,0,False,,0912,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3830,Mostly cloudy,0,0,False,,0944,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC931,Mostly cloudy,0,0,False,,1012,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3831,Mostly cloudy,0,0,False,,1044,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC932,Cloudy,0,0,False,,1112,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3832,Cloudy,2,0,False,,1144,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC933,Mostly cloudy,2,0,False,,1212,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3833,Mostly cloudy,2,0,False,,1244,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC934,Mostly cloudy,2,0,False,,1312,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3834,Mostly cloudy,2,0,False,,1344,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC935,Cloudy,2,0,False,,1412,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3835,Cloudy,2,0,False,,1444,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3836,Cloudy,2,0,False,,1544,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3837,Cloudy,2,0,False,,1644,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC938,Cloudy,2,0,False,,1712,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3838,Cloudy,1,0,False,,1744,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC939,Cloudy,1,0,False,,1812,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3839,Cloudy,1,0,False,,1844,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC940,Cloudy,1,0,False,,1912,60
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3840,Cloudy,1,0,False,,1944,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC941,Cloudy,1,0,False,,2012,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3841,Cloudy,0,0,False,,2044,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC942,Cloudy,0,0,False,,2112,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3842,Cloudy,0,0,False,,2144,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC943,Cloudy,0,0,False,,2212,0
+Charleroi-Sud,Mons,Tuesday,BE.NMBS.IC3843,Cloudy,1,0,False,,2247,60
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3825,Light snow,0,0,True,Snow,0444,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3826,Light snow,-1,0,True,Snow,0544,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC927,Light snow,-1,0,True,Snow,0612,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3827,Light snow,-1,0,True,Snow,0644,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC928,Light snow,-1,0,True,Snow,0712,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3828,Light snow,-1,0,True,Snow,0744,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC929,Light snow,-1,0,True,Snow,0812,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3829,Cloudy,-1,0,False,,0844,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC930,Cloudy,-1,0,False,,0912,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3830,Light snow,-1,0,True,Snow,0944,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC931,Light snow,-1,0,True,Snow,1012,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3831,Light snow,-1,0,True,Snow,1044,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC932,Light snow,-1,0,True,Snow,1112,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3832,Light snow,-1,0,True,Snow,1144,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC933,Light snow,-1,0,True,Snow,1212,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3833,Cloudy,0,0,False,,1244,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC934,Cloudy,0,0,False,,1312,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3834,Light snow,0,0,True,Snow,1344,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC935,Cloudy,0,0,False,,1412,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3835,Cloudy,0,0,False,,1444,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC936,Cloudy,0,0,False,,1512,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3836,Cloudy,1,0,False,,1544,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC937,Cloudy,1,0,False,,1612,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3837,Cloudy,1,0,False,,1644,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC938,Mostly cloudy,1,0,False,,1712,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3838,Partly cloudy,1,0,False,,1744,420
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC939,Partly cloudy,0,0,False,,1812,60
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3839,Mostly clear,0,0,False,,1844,1020
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC940,Mostly clear,0,0,False,,1912,180
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3840,Clear,-1,0,False,,1944,420
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC941,Clear,-1,0,False,,2012,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3841,Clear,-1,0,False,,2044,240
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC942,Clear,-1,0,False,,2112,60
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3842,Clear,-2,0,False,,2144,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC943,Clear,-2,0,False,,2212,0
+Charleroi-Sud,Mons,Wednesday,BE.NMBS.IC3843,Clear,-2,0,False,,2247,120
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3825,Fog,-5,0,False,,0444,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3826,Fog,-3,0,False,,0544,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC927,Fog,-5,0,False,,0612,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3827,Fog,-5,0,False,,0644,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC928,Fog,-3,0,False,,0712,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3828,Fog,-5,0,False,,0744,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC929,Fog,-5,0,False,,0812,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3829,Fog,-3,0,False,,0844,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC930,Fog,-5,0,False,,0912,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3830,Fog,-3,0,False,,0944,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC931,Fog,-3,0,False,,1012,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3832,Fog,-3,0,False,,1144,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC933,Fog,-2,0,False,,1212,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3833,Mostly cloudy,-2,0,False,,1244,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC934,Mostly cloudy,-2,0,False,,1312,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3834,Mostly sunny,-1,0,False,,1344,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC935,Mostly cloudy,-1,0,False,,1412,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3835,Mostly cloudy,0,0,False,,1444,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC936,Mostly cloudy,0,0,False,,1512,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3836,Mostly cloudy,0,0,False,,1544,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC937,Mostly cloudy,0,0,False,,1612,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3837,Mostly cloudy,0,0,False,,1644,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC938,Mostly cloudy,0,0,False,,1712,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3838,Mostly cloudy,0,0,False,,1744,300
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC939,Mostly cloudy,-1,0,False,,1812,660
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3839,Cloudy,-1,0,False,,1844,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC940,Cloudy,-1,0,False,,1912,180
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3840,Cloudy,-1,0,False,,1944,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC941,Cloudy,-1,0,False,,2012,120
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3841,Cloudy,-1,0,False,,2044,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC942,Cloudy,-1,0,False,,2112,60
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3842,Light snow,-1,0,True,Snow,2144,0
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC943,Light snow,-1,0,True,Snow,2212,600
+Charleroi-Sud,Mons,Thursday,BE.NMBS.IC3843,Cloudy,-1,0,False,,2247,420
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3827,Mostly cloudy,2,0,False,,0644,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC928,Mostly cloudy,2,0,False,,0712,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3828,Mostly cloudy,2,0,False,,0744,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC929,Cloudy,2,0,False,,0812,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3829,Light rain,2,0,True,Rain,0844,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC930,Mostly cloudy,2,0,False,,0912,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3830,Mostly cloudy,2,0,False,,0944,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC931,Mostly cloudy,2,0,False,,1012,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3831,Mostly cloudy,2,0,False,,1044,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC932,Mostly cloudy,2,0,False,,1112,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3832,Mostly cloudy,2,0,False,,1144,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC933,Mostly cloudy,3,0,False,,1212,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3833,Mostly cloudy,3,0,False,,1244,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC934,Mostly cloudy,5,0,False,,1312,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3834,Mostly cloudy,5,0,False,,1344,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC935,Cloudy,5,0,False,,1412,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3835,Cloudy,5,0,False,,1444,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC936,Cloudy,5,0,False,,1512,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3836,Cloudy,5,0,False,,1544,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC937,Cloudy,5,0,False,,1612,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3837,Cloudy,5,0,False,,1644,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC938,Cloudy,5,0,False,,1712,120
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3838,Mostly cloudy,5,0,False,,1744,120
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC939,Cloudy,5,0,False,,1812,300
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3839,Cloudy,3,0,False,,1844,120
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC940,Cloudy,3,0,False,,1912,360
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3840,Cloudy,3,0,False,,1944,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC941,Cloudy,3,0,False,,2012,120
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3841,Mostly cloudy,3,0,False,,2044,120
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC942,Cloudy,2,0,False,,2112,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3842,Mostly cloudy,2,0,False,,2144,0
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC943,Cloudy,2,0,False,,2212,60
+Charleroi-Sud,Mons,Friday,BE.NMBS.IC3843,Cloudy,2,0,False,,2247,300
