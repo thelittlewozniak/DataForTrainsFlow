@@ -97,7 +97,7 @@ namespace TrainsFlow.Controllers
                 _context.SaveChanges();
                 var predictions = model.Transform(trainingdataView);
                 var metrics = mlContext.Regression.Evaluate(predictions, "Label", "Score");
-                return metrics.RSquared.ToString();
+                return metrics.RSquared.ToString()+" "+metrics.Rms.ToString();
             }
             catch (Exception e)
             {

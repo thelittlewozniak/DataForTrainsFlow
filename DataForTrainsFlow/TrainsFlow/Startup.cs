@@ -34,7 +34,7 @@ namespace TrainsFlow
             });
 
             var connection = Configuration.GetConnectionString("defaultConnection");
-            services.AddDbContext<Context>(options => options.UseSqlServer(connection));
+            services.AddDbContext<Context>(options => options.UseSqlServer("Server=tcp:trainsflow.database.windows.net,1433;Initial Catalog=trainsflowDB;Persist Security Info=False;User ID=thelittlewozniak;Password=Ruedesdames14;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
